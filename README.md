@@ -9,7 +9,7 @@ John Kimiayo
 
 ## Tech Stack
 
-HTML, CSS, Vanilla JavaSCript
+HTML, CSS, Vanilla JavaSCript,React
 
 ## Tools Used
 
