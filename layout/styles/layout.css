@@ -86,7 +86,7 @@ div.mainbody {
 }
 
 div.gallery {
-    border: 1px solid #ccc;
+    border: 1px solid #ee6e6e;
     background-color: #d30808;
 }
 
@@ -142,7 +142,7 @@ h2{
 h1{
     text-align: center;
     text-size-adjust: 15px;
-    background-color: rgb(234, 236, 240);
+    background-color: rgb(243, 236, 236);
 }
 #customers {
     font-family: Arial, Helvetica, sans-serif;
@@ -151,7 +151,7 @@ h1{
   }
   
   #customers td, #customers th {
-    border: 1px solid #ddd;
+    border: 1px solid #050505;
     padding: 8px;
   }
   
@@ -168,12 +168,12 @@ h1{
   }
 
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(201, 56, 56, 0.2);
     max-width: 400px;
     margin: auto;
     text-align: center;
     font-family: arial;
-    background-color: #0a0a0a;
+    background-color: #e9e3e3;
   }
   
   .title {
@@ -187,7 +187,7 @@ h1{
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: #d1c3c3;
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -198,5 +198,116 @@ h1{
     text-decoration: none;
     font-size: 22px;
     color: black;
+  }
+  body {
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  a:hover,
+  a:focus,
+  a:active {
+    text-decoration: none;
+  }
+  .btn {
+    text-transform: uppercase;
+  }
+  .btn.btn-lg {
+    padding: 6px 30px;
+  }
+  .thumbnail-title {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+  .img-thumb-bg {
+    padding: 0;
+    overflow: hidden;
+    min-height: 200px;
+    position: relative;
+    border-radius: 3px;
+    background-position: center;
+    background-color: transparent;
+    background-image: url('http://projects.mostlikers.com/_images/estate-image.jpg');
+  }
+  .img-thumb-bg p {
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 16px;
+  }
+  .img-thumb-bg .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, #000000 100%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 50%, #000000 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+  }
+  .img-thumb-bg .caption {
+    bottom: -5px;
+    height: 100px;
+    font-size: 12px;
+    position: absolute;
+    padding: 0 20px 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  .img-thumb-bg .caption .tag a {
+    color: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: #2980B9;
+  }
+  .img-thumb-bg .caption .title {
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .img-thumb-bg .caption .title a {
+    color: #fff;
+  }
+  .img-thumb-bg .caption .title a:hover {
+    color: #2980B9;
+  }
+  .img-thumb-bg .caption .meta-data {
+    color: #777;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 15px;
+  }
+  .img-thumb-bg .caption .meta-data a {
+    color: #777;
+  }
+  .img-thumb-bg .caption .meta-data a .fa {
+    color: #2980B9;
+  }
+  .img-thumb-bg .caption .meta-data a:hover {
+    color: #2980B9;
+  }
+  .img-thumb-bg .caption .content {
+    display: none;
+  }
+  .img-thumb-bg:hover .overlay {
+    background: rgba(46, 49, 58, 0.8);
+  }
+  .img-thumb-bg:hover .caption {
+    bottom: 60px;
+  }
+  .img-thumb-bg:hover .caption .content {
+    display: block;
   }
   
