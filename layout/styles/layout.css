@@ -142,7 +142,7 @@ h2{
 h1{
     text-align: center;
     text-size-adjust: 15px;
-    background-color: rgb(243, 236, 236);
+
 }
 #customers {
     font-family: Arial, Helvetica, sans-serif;
@@ -312,5 +312,5 @@ h1{
   }
   
   body{
-    background-color: #bbb3b3;
+    background-color: #0f0f0f;
   }
