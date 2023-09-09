@@ -3,4 +3,4 @@ My Tech Skills
 
 
 
-React,MongoDB,Node,Microsoft Power BI,Microsoft SQL Server,MySQL,PostgreSQL,Docker
+React,MongoDB,Node,Microsoft Power BI,Microsoft SQL Server,MySQL,PostgreSQL,Docker,Python Pandas
