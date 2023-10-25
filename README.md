@@ -1,6 +1,3 @@
-My Tech Skills
+My Tech stack
 
-
-
-
-React,MongoDB,Node,Microsoft Power BI,Microsoft SQL Server,MySQL,PostgreSQL,HTML,CSS,Bootstrap,VScode,Express.js,Cheerio.js,puppeteer.js,Tableau BI
+PowerBI, MicrosoftSQL,Excel,Jupyter,AWS DybamoDB,MongoDb,Node
