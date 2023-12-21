@@ -1,9 +1,10 @@
 My Tech stack
 
 PowerBI          - VIsualize Data
-MicrosoftSQL      -Query data
+MicrosoftSQL      -Store Data
 Excel            - data cleaning
-Pyhton           - data mining ,cleaning and visualizing
-AWS DybamoDB     -SQL queries in the cloud
-MongoDb          -storing unstructured data
+Python           - data mining ,cleaning and visualizing
+AWS DybamoDB     -Cloud data storage
+MongoDb          -storing unstructured data in the cloud
 Node             - CRUD opertions to Databases
+SQL               - Query Data
