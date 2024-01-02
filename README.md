@@ -1,11 +1,11 @@
 Data Analyst
 
-Excel - Data Cleaning
+Excel - Data Cleaning and Modeling
 
 SQL  - Query Data and Cleaning
 
-Python - Cleaning Data and Create Visualisations
+Python - Cleaning Data and Visualisations
 
 Power BI -  Data Modeling and Visualisation
 
-React - Display Data
+Google Analytcis - Web Analytcis
