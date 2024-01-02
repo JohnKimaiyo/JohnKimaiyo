@@ -8,4 +8,4 @@ Python - Cleaning Data and Visualisations
 
 Power BI -  Data Modeling and Visualisation
 
-Google Analytcis - Web Analytcis
+Google Analytics- Web Analytics
