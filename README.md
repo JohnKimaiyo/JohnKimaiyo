@@ -2,10 +2,12 @@ Data Analyst Tools
 
 Excel - Data Cleaning and Modeling
 
-SQL  - Query Data and Cleaning
+SQL  - Create and perform EDA
 
-Python - Cleaning Data and Visualisations
+Python - EDA
 
 Power BI -  Data Modeling and Visualisation
+
+Node - Webscraping
 
 Google Analytics- Web Analytics
