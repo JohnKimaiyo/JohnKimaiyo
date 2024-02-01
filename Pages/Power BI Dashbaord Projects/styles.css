@@ -1,0 +1,31 @@
+/* Define CSS rules for your classes */
+.logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* Centers the logo horizontally */
+}
+
+h2 {
+    margin: 0; /* Remove default margin for h2 */
+}
+
+p {
+    text-align: center;
+    text-emphasis-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+ol {
+    padding-left: 0; /* Remove default padding for ordered list */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+.app{
+    background-color: rgb(184, 135, 135);
+}
