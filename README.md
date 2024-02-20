@@ -1,8 +1,8 @@
 Data Analyst Tools
 
-Excel - Data Cleaning and Modeling
+Excel - EDA
 
-SQL  - Create and perform EDA
+SQL  - EDA
 
 Python - EDA
 
