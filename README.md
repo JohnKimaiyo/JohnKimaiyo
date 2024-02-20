@@ -8,6 +8,8 @@ Python - EDA
 
 Power BI -  Data Modeling and Visualisation
 
-Node - Webscraping
+Node - CRUD
+
+React - UI Components
 
 
