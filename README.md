@@ -8,8 +8,14 @@ Python - EDA
 
 Power BI -  Data Modeling and Visualisation
 
-Node - CRUD
+Node - REST API
 
-React - UI Components
+React - UI Components for public API
+
+BigQuery
+
+Locker Studio
+
+google collab
 
 
