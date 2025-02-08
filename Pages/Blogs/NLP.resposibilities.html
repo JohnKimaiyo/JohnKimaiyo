@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Developer Responsibilities</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --highlight: #ef4444;
+        }
+        
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            color: #1f2937;
+            background-color: #f9fafb;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-dark);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            color: #111827;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: var(--highlight);
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Return Home
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1>NLP Developer Responsibilities</h1>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>LLM Architecture & <span class="highlight">Optimization</span></h2>
+                <ul>
+                    <li>Design and implement multi-model LLM architectures for real-time <span class="highlight">sentiment analysis</span></li>
+                    <li>Optimize model performance for processing high-volume social media data</li>
+                    <li>Develop sophisticated prompt engineering strategies for improved accuracy</li>
+                    <li>Create robust validation frameworks for model outputs</li>
+                    <li>Implement efficient model deployment strategies for production environments</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2><span class="highlight">Sentiment Analysis</span> Development</h2>
+                <ul>
+                    <li>Build advanced <span class="highlight">sentiment analysis</span> systems for <span class="highlight">financial market</span> events</li>
+                    <li>Develop <span class="highlight">classification systems</span> for market-moving events</li>
+                    <li>Create sophisticated clustering <span class="highlight">algorithms</span> for social media data</li>
+                    <li>Design systems for real-time sentiment scoring</li>
+                    <li>Implement context-aware <span class="highlight">sentiment analysis</span> solutions</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Model Validation & Testing</h2>
+                <ul>
+                    <li>Design comprehensive <span class="highlight">testing</span> frameworks for LLM outputs</li>
+                    <li>Develop backtesting systems for <span class="highlight">sentiment analysis</span> models</li>
+                    <li>Create validation protocols for historical <span class="highlight">data analysis</span></li>
+                    <li>Implement A/B <span class="highlight">testing</span> frameworks for model comparison</li>
+                    <li>Build <span class="highlight">performance monitoring</span> systems for production models</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Research & Development</h2>
+                <ul>
+                    <li>Conduct research into the latest LLM developments and applications</li>
+                    <li>Explore innovative approaches to <span class="highlight">financial sentiment analysis</span></li>
+                    <li>Develop novel prompt engineering techniques</li>
+                    <li>Create new methodologies for market event classification</li>
+                    <li>Research efficient ways to handle real-time social media data</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
