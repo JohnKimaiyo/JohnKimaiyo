@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Source Data Engineering Tools</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --hover-color: #1d4ed8;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-color: #1e293b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: var(--card-bg);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 1.1rem;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .category {
+            background: var(--card-bg);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .category-number {
+            background: var(--primary-color);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            margin-right: 0.75rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            background: var(--bg-color);
+            border-radius: 0.5rem;
+            transition: all 0.2s;
+        }
+
+        li:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Return Home
+        </a>
+    </nav>
+    <div class="container">
+        <header class="header">
+            <h1>Open Source Data Engineering Tools</h1>
+            <p class="subtitle">A comprehensive collection of tools for modern data engineering</p>
+        </header>
+        
+        <div class="tools-grid">
+            <div class="category">
+                <h2><span class="category-number">1</span>Data Ingestion & ETL/ELT</h2>
+                <ul>
+                    <li>Apache NiFi</li>
+                    <li>Airbyte</li>
+                    <li>Singer</li>
+                    <li>Meltano</li>
+                    <li>Talend Open Studio</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <h2><span class="category-number">2</span>Workflow Orchestration</h2>
+                <ul>
+                    <li>Apache Airflow</li>
+                    <li>Dagster</li>
+                    <li>Luigi</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <h2><span class="category-number">3</span>Data Processing & Transformation</h2>
+                <ul>
+                    <li>Apache Spark</li>
+                    <li>Apache Flink</li>
+                    <li>DBT (Data Build Tool)</li>
+                    <li>Pandas</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <h2><span class="category-number">4</span>Data Storage & Management</h2>
+                <ul>
+                    <li>Apache Hadoop (HDFS)</li>
+                    <li>Apache Iceberg</li>
+                    <li>Delta Lake</li>
+                    <li>DuckDB</li>
+                    <li>ClickHouse</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <h2><span class="category-number">5</span>Data Streaming</h2>
+                <ul>
+                    <li>Apache Kafka</li>
+                    <li>Redpanda</li>
+                    <li>Apache Pulsar</li>
+                    <li>Flink SQL</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <h2><span class="category-number">6</span>Data Warehousing & Query Engines</h2>
+                <ul>
+                    <li>Presto/Trino</li>
+                    <li>Apache Druid</li>
+                    <li>Apache Pinot</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <h2><span class="category-number">7</span>Data Cataloging & Governance</h2>
+                <ul>
+                    <li>Apache Atlas</li>
+                    <li>Amundsen</li>
+                    <li>DataHub</li>
+                </ul>
+            </div>
+            
+            <div class="category">
+                <h2><span class="category-number">8</span>Data Quality & Monitoring</h2>
+                <ul>
+                    <li>Great Expectations</li>
+                    <li>Deequ</li>
+                    <li>Monte Carlo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
