@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLOps Breakdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .step {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 5px solid #007bff;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .tools {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            Return Home
+        </a>
+    </nav>
+    <h1>MLOps Breakdown</h1>
+    <p>A step-by-step breakdown of the MLOps pipeline along with best practices and tools.</p>
+
+    <div class="step">
+        <h2>1. Ingest Data</h2>
+        <p><strong>Description:</strong> Collect raw data from various sources like databases, APIs, logs, IoT devices, etc.</p>
+        <p><strong>Best Practices:</strong> Ensure structured data collection, automate ingestion pipelines.</p>
+        <p class="tools">Tools: Apache Kafka, Apache Nifi, Airflow, AWS Glue, Google Cloud Dataflow</p>
+    </div>
+
+    <div class="step">
+        <h2>2. Validate Data</h2>
+        <p><strong>Description:</strong> Check data quality, integrity, and consistency.</p>
+        <p><strong>Best Practices:</strong> Use schema validation, automate data validation pipelines.</p>
+        <p class="tools">Tools: Great Expectations, Deequ, TensorFlow Data Validation (TFDV)</p>
+    </div>
+
+    <div class="step">
+        <h2>3. Clean Data</h2>
+        <p><strong>Description:</strong> Handle missing values, remove duplicates, resolve inconsistencies.</p>
+        <p><strong>Best Practices:</strong> Define clear rules, automate cleaning processes.</p>
+        <p class="tools">Tools: Pandas, PySpark, OpenRefine</p>
+    </div>
+
+    <div class="step">
+        <h2>4. Standardize Data</h2>
+        <p><strong>Description:</strong> Convert data into a uniform format for easier processing.</p>
+        <p><strong>Best Practices:</strong> Normalize numerical values, standardize categorical data.</p>
+        <p class="tools">Tools: Scikit-learn, Pandas, NumPy</p>
+    </div>
+
+    <div class="step">
+        <h2>5. Curate Data</h2>
+        <p><strong>Description:</strong> Organize and prepare data for feature engineering.</p>
+        <p><strong>Best Practices:</strong> Maintain metadata, align curated datasets with business objectives.</p>
+        <p class="tools">Tools: Delta Lake, DVC, Snowflake</p>
+    </div>
+    
+    <div class="step">
+        <h2>6. Extract Features</h2>
+        <p><strong>Description:</strong> Identify and derive useful features from raw data.</p>
+        <p><strong>Best Practices:</strong> Use feature extraction techniques like PCA, embeddings.</p>
+        <p class="tools">Tools: Featuretools, Scikit-learn, TensorFlow Feature Columns</p>
+    </div>
+    
+    <div class="step">
+        <h2>7. Select Features</h2>
+        <p><strong>Description:</strong> Choose the most relevant features for modeling.</p>
+        <p><strong>Best Practices:</strong> Use selection techniques like mutual information, SHAP values.</p>
+        <p class="tools">Tools: Scikit-learn, SHAP, BorutaPy</p>
+    </div>
+    
+    <div class="step">
+        <h2>8. Identify Candidate Models</h2>
+        <p><strong>Description:</strong> Experiment with different ML models.</p>
+        <p><strong>Best Practices:</strong> Start with baseline models before tuning complex ones.</p>
+        <p class="tools">Tools: TensorFlow, PyTorch, Scikit-learn, H2O.ai, Google AutoML</p>
+    </div>
+    
+    <div class="step">
+        <h2>9. Write Code</h2>
+        <p><strong>Description:</strong> Implement ML models, pipelines, and training logic.</p>
+        <p><strong>Best Practices:</strong> Follow modular programming, use version control.</p>
+        <p class="tools">Tools: Git, Jupyter Notebooks, VS Code, PyCharm</p>
+    </div>
+    
+    <div class="step">
+        <h2>10. Train Models</h2>
+        <p><strong>Description:</strong> Fit models using the prepared dataset.</p>
+        <p><strong>Best Practices:</strong> Use GPU/TPU acceleration, implement early stopping.</p>
+        <p class="tools">Tools: TensorFlow, PyTorch, XGBoost</p>
+    </div>
+    
+    <div class="step">
+        <h2>11. Validate & Evaluate Models</h2>
+        <p><strong>Description:</strong> Assess model performance on validation data.</p>
+        <p><strong>Best Practices:</strong> Use cross-validation, compare models with benchmarks.</p>
+        <p class="tools">Tools: Scikit-learn, TensorBoard, MLflow</p>
+    </div>
+    
+    <div class="step">
+        <h2>12. Deploy & Monitor Model</h2>
+        <p><strong>Description:</strong> Release model into production and track performance.</p>
+        <p><strong>Best Practices:</strong> Use A/B testing, automate monitoring alerts.</p>
+        <p class="tools">Tools: AWS SageMaker, Kubernetes, Prometheus, Grafana</p>
+    </div>
+    
+    <div class="step">
+        <h2>13. Retrain or Retire Model</h2>
+        <p><strong>Description:</strong> Update or remove models based on performance.</p>
+        <p><strong>Best Practices:</strong> Automate scheduled retraining with fresh data.</p>
+        <p class="tools">Tools: Kubeflow, Airflow, DVC</p>
+    </div>
+</body>
+</html>
