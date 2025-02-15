@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications of Data Science in Finance</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --text-color: #1f2937;
+            --background-light: #f8fafc;
+            --card-hover: #f1f5f9;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .home-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--primary-color);
+            background: white;
+            padding: 8px 16px;
+            border-radius: 24px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .home-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            padding: 20px 0;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+            background: var(--card-hover);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.25rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card-number {
+            background: var(--primary-color);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.875rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 40px auto;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .home-link {
+                position: static;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" class="home-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Return Home
+    </a>
+
+    <div class="container">
+        <h1>Applications of Data Science in Finance</h1>
+        
+        <div class="grid">
+            <div class="card">
+                <h2><span class="card-number">1</span>Risk Management & Fraud Detection</h2>
+                <ul>
+                    <li>Predictive analytics helps assess credit risk.</li>
+                    <li>Machine learning models detect fraudulent transactions.</li>
+                    <li>Sentiment analysis evaluates market risk.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><span class="card-number">2</span>Algorithmic Trading & Investment</h2>
+                <ul>
+                    <li>Quantitative models optimize trading strategies.</li>
+                    <li>AI-powered robo-advisors provide investment recommendations.</li>
+                    <li>High-frequency trading (HFT) enhances market performance.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><span class="card-number">3</span>Customer Analytics</h2>
+                <ul>
+                    <li>Customer segmentation for tailored financial products.</li>
+                    <li>AI chatbots improve customer service.</li>
+                    <li>Predictive models assess customer lifetime value.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><span class="card-number">4</span>Financial Forecasting</h2>
+                <ul>
+                    <li>Time series analysis predicts market trends.</li>
+                    <li>Data-driven models optimize cash flow.</li>
+                    <li>Stress testing ensures financial stability.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><span class="card-number">5</span>Credit Scoring & Loan Approval</h2>
+                <ul>
+                    <li>Alternative credit scoring uses non-traditional data.</li>
+                    <li>AI-powered underwriting speeds up loan approvals.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><span class="card-number">6</span>Blockchain & Cryptocurrency</h2>
+                <ul>
+                    <li>Fraud detection in blockchain transactions.</li>
+                    <li>Price prediction models for cryptocurrencies.</li>
+                    <li>Smart contract analysis enhances security.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h2><span class="card-number">7</span>Regulatory Compliance & AML</h2>
+                <ul>
+                    <li>Machine learning monitors suspicious transactions.</li>
+                    <li>NLP automates compliance reporting.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
