@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Programming Languages for Animation</title>
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --background-color: #f8f9fa;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--secondary-color);
+        }
+
+        .home-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            color: var(--secondary-color);
+            background-color: white;
+            padding: 8px 16px;
+            border-radius: 24px;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.2s ease;
+        }
+
+        .home-link:hover {
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: var(--card-shadow);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 1.5em;
+            position: relative;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.5em;
+            margin-top: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        .section-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        p {
+            margin: 1em 0;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .home-link {
+                position: static;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" class="home-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Return Home
+    </a>
+    <div class="container">
+        <h1>Using Programming Languages for Animation</h1>
+        
+        <div class="section-card">
+            <h2>Scripting in Animation Software</h2>
+            <p>Tools like <strong>Blender, Maya, and Houdini</strong> use scripting languages like <strong>Python</strong> and <strong>MEL</strong> to automate tasks and control animation rigs.</p>
+        </div>
+        
+        <div class="section-card">
+            <h2>Procedural Animation</h2>
+            <p>Mathematical functions can be used to generate animations automatically, commonly seen in tools like Houdini.</p>
+        </div>
+        
+        <div class="section-card">
+            <h2>Game Engines for Animation</h2>
+            <p>Game engines such as <strong>Unity (C#)</strong> and <strong>Unreal Engine (C++)</strong> are used for real-time animation and cinematic sequences.</p>
+        </div>
+        
+        <div class="section-card">
+            <h2>Custom Animation Tools</h2>
+            <p>Large studios create proprietary tools using <strong>C++</strong> or <strong>Python</strong> for custom animation workflows.</p>
+        </div>
+        
+        <div class="section-card">
+            <h2>AI & Machine Learning</h2>
+            <p>Technologies like <strong>TensorFlow</strong> and <strong>PyTorch</strong> enable AI-driven facial animation, motion capture, and lip-syncing.</p>
+        </div>
+        
+        <div class="section-card">
+            <h2>Web-based Animations</h2>
+            <p>Libraries like <strong>Three.js, WebGL, and P5.js</strong> allow web-based 2D/3D animations.</p>
+        </div>
+        
+        <div class="section-card">
+            <h2>2D & 3D Animation via Coding</h2>
+            <p>Languages like <strong>Processing (Java-based)</strong> and <strong>OpenGL (C++)</strong> help in coding custom 2D/3D animations.</p>
+        </div>
+    </div>
+</body>
+</html>
