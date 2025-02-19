@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GL Reconciliation on Intellimatch</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background-color: #f4f4f4; }
+        h1, h2, h3 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background-color: #555; color: white; }
+        pre { background-color: #eee; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<nav class="nav-bar">
+    <a href="/index.html" class="home-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Return Home
+    </a>
+</nav>
+<body>
+    <h1>GL Reconciliation on Intellimatch</h1>
+    
+    <h2>1. Bank Reconciliation (IFRS 9 - Financial Instruments)</h2>
+    <h3>Scenario: Bank fee not recorded in the GL</h3>
+    <pre>
+Dr. Bank Charges Expense       1,000  
+    Cr. Bank Account          1,000  
+    </pre>
+    
+    <h2>2. Trade & Treasury Reconciliation (IFRS 7 & IFRS 13)</h2>
+    <h3>Scenario: Forex trade recorded at the wrong exchange rate</h3>
+    <pre>
+Dr. Foreign Exchange Loss       50,000  
+    Cr. Accounts Payable       50,000  
+    </pre>
+    
+    <h2>3. Intercompany Reconciliation (IFRS 10 - Consolidated Financial Statements)</h2>
+    <h3>Scenario: Intercompany sale not recorded in the subsidiary’s books</h3>
+    <h4>Parent Company - ABC Ltd:</h4>
+    <pre>
+Dr. Accounts Receivable - XYZ Ltd     500,000  
+    Cr. Sales Revenue                 500,000  
+    </pre>
+    <h4>Subsidiary - XYZ Ltd:</h4>
+    <pre>
+Dr. Inventory / Purchases             500,000  
+    Cr. Accounts Payable - ABC Ltd    500,000  
+    </pre>
+    
+    <h2>4. Accounts Payable & Receivable Matching (IFRS 15 & IFRS 9 - ECL Model)</h2>
+    <h3>Scenario 1: Revenue recognized before cash is received</h3>
+    <pre>
+Dr. Accounts Receivable     300,000  
+    Cr. Sales Revenue       300,000  
+    </pre>
+    <h3>When cash is received:</h3>
+    <pre>
+Dr. Bank Account           300,000  
+    Cr. Accounts Receivable 300,000  
+    </pre>
+    
+    <h3>Scenario 2: Expected Credit Loss (ECL) on overdue invoices</h3>
+    <h4>Provision for Doubtful Debt:</h4>
+    <pre>
+Dr. Bad Debt Expense      50,000  
+    Cr. Allowance for Doubtful Debts   50,000  
+    </pre>
+    <h4>Bad Debt Write-off:</h4>
+    <pre>
+Dr. Allowance for Doubtful Debts   50,000  
+    Cr. Accounts Receivable        50,000  
+    </pre>
+    
+    <h2>Summary of Key Ledger Entries</h2>
+    <table>
+        <tr>
+            <th>Transaction</th>
+            <th>Debit (Dr.)</th>
+            <th>Credit (Cr.)</th>
+            <th>IFRS Standard</th>
+        </tr>
+        <tr>
+            <td>Bank Charges (Not recorded in GL)</td>
+            <td>Bank Charges Expense</td>
+            <td>Bank Account</td>
+            <td>IFRS 9</td>
+        </tr>
+        <tr>
+            <td>Forex Trade Adjustment</td>
+            <td>Forex Loss</td>
+            <td>Accounts Payable</td>
+            <td>IFRS 7, IFRS 13</td>
+        </tr>
+        <tr>
+            <td>Intercompany Sale</td>
+            <td>Accounts Receivable</td>
+            <td>Sales Revenue</td>
+            <td>IFRS 10</td>
+        </tr>
+        <tr>
+            <td>Intercompany Purchase</td>
+            <td>Inventory</td>
+            <td>Accounts Payable</td>
+            <td>IFRS 10</td>
+        </tr>
+        <tr>
+            <td>Revenue Recognition</td>
+            <td>Accounts Receivable</td>
+            <td>Sales Revenue</td>
+            <td>IFRS 15</td>
+        </tr>
+        <tr>
+            <td>Cash Received</td>
+            <td>Bank</td>
+            <td>Accounts Receivable</td>
+            <td>IFRS 15</td>
+        </tr>
+        <tr>
+            <td>Provision for Doubtful Debt</td>
+            <td>Bad Debt Expense</td>
+            <td>Allowance for Doubtful Debts</td>
+            <td>IFRS 9</td>
+        </tr>
+        <tr>
+            <td>Bad Debt Write-off</td>
+            <td>Allowance for Doubtful Debts</td>
+            <td>Accounts Receivable</td>
+            <td>IFRS 9</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
