@@ -1,4 +1,4 @@
-# 👋 Hi, I’m John Kipkemboi Kimaiyo
+# 👋 Hi, I’m John  Kimaiyo
 
 🚀 **Data Analytics | Business Intelligence | Supply Chain & Aviation Analytics | Finance → Tech**
 
