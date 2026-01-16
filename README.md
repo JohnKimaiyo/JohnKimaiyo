@@ -82,9 +82,9 @@ I enjoy building **portfolio projects that mirror real-world systems** used in a
 ---
 
 ## 🤝 Let’s Connect
-- 💼 Portfolio: [johnkimaiyo-rosy.vercel.app](https://johnkimaiyo-rosy.vercel.app/)
+- 💼 Portfolio: [johnkimaiyo-rosy.vercel.app](https://johnkimaiyo-rosy.vercel.app)
 - 📧 Email: kimaiyojohn6@gmail.com
-- 🔗 LinkedIn: *Add your LinkedIn here*
+- 🔗 LinkedIn: [(https://www.linkedin.com/in/johnkimaiyo/)]
 
 ---
 
