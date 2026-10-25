@@ -1,139 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Kimaiyo Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <style>
-body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    background: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    text-align: center;
-    padding: 2rem;
-    background: #003366;
-    color: #fff;
-}
-
-header h1 {
-    margin-bottom: 0.3rem;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #003366;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.home {
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.link-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.home-link {
-    background: #00509e;
-    color: white;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: 0.3s ease;
-}
-
-.home-link:hover {
-    background: #0073e6;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem;
-}
-
-.card {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.back-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    color: white;
-    text-decoration: none;
-    font-size: 0.9rem;
-    background: #00509e;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-
-.project-list {
-    list-style: none;
-    padding: 2rem;
-    max-width: 600px;
-    margin: auto;
-}
-
-.project-list li {
-    background: #fff;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-
-
-
-  </style>
-    <header>
-        <h1>John Kimaiyo</h1>
-        <p>Financial Planning Analyst</p>
-         <p>React Developer</p>
-         <p>Node Developer</p>
-         <p>Data Engineer</p>
-         <p>Data Analyst</p>
-    </header>
-
-    <main class="home">
-        <h2>Project Categories</h2>
-        <div class="link-container">
-          <a href="/Pages/Kaggle/kaggle.html" class="home-link">Kaggle Competitions</a>
-            <a href="independent.html" class="home-link">Independent Projects</a>
-            <a href="opensource.html" class="home-link">Open Source Contributions</a>
-            
-        </div>
-    </main>
-
-    <footer>
-        <p>© 2025 John Kipkemboi Kimaiyo</p>
-    </footer>
-</body>
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | John Kimaiyo</title>
+<meta name="description" content="John Kimaiyo: data analyst focused on BI, supply chain and aviation analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="site-header"><div class="wrap nav"><a class="brand" href="index.html">John<span>Kimaiyo</span></a>
+<button class="menu-btn" aria-label="Menu">☰</button><ul><li><a class="link active" href="index.html">Home</a></li><li><a class="link" href="about.html">About</a></li><li><a class="link" href="services.html">Skills</a></li><li><a class="link" href="projects.html">Projects</a></li><li><a class="link" href="contact.html">Contact</a></li></ul></div></header>
+<main><div class="wrap hero"><div class="eyebrow">Data Analytics · BI · Finance → Tech</div>
+<h1>Turning operational data into <em>decisions</em>.</h1>
+<p class="lead">I'm John Kimaiyo, a data analyst with a background in finance and supply chain, building end-to-end analytics systems, dashboards and decision-support tools.</p>
+<div class="btns"><a class="btn primary" href="projects.html">View projects</a><a class="btn ghost" href="contact.html">Get in touch</a></div></div>
+<section class="wrap"><h2>What I work on</h2><div class="grid">
+<div class="card"><div class="icon">📊</div><h3>Data Analytics &amp; BI</h3><p>SQL, Power BI and Python (Pandas, NumPy) for clear dashboards.</p></div>
+<div class="card"><div class="icon">🏬</div><h3>Supply Chain Analytics</h3><p>Stock movement, warehouse visibility and donor-funded health supply chains.</p></div>
+<div class="card"><div class="icon">✈️</div><h3>Aviation &amp; Revenue</h3><p>Demand forecasting, pricing logic and route performance.</p></div>
+<div class="card"><div class="icon">🌐</div><h3>Analytics Web Apps</h3><p>Flask apps with query-driven dashboards.</p></div></div></section></main>
+<footer class="site-footer"><div class="wrap">© 2026 John Kipkemboi Kimaiyo · Deriving insights from data</div></footer>
+<script src="script.js"></script></body></html>
